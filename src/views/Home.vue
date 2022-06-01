@@ -54,15 +54,15 @@
 
 					//Using the coordinates received in API for creating markers on the map
 					this.bikeCoordinates.map(bikeCoordinate => {
-					const el = document.createElement('div');
-					el.className = 'marker';
-					el.style.backgroundImage = 'url(/images/bicycle1.png)';
-					el.style.width = '30px';
-					el.style.height = '30px';
-					new mapboxgl.Marker(el)
-					.setLngLat([bikeCoordinate.longitude, bikeCoordinate.latitude])
-					.addTo(map);
-				})
+						const el = document.createElement('div');
+						el.className = 'marker';
+						el.style.backgroundImage = 'url(/images/bicycle1.png)';
+						el.style.width = '30px';
+						el.style.height = '30px';
+						new mapboxgl.Marker(el)
+						.setLngLat([bikeCoordinate.longitude, bikeCoordinate.latitude])
+						.addTo(map);
+					})
 			 	} else {
 				  	if (response.status === 404) {
                         throw new Error('Url not found');
