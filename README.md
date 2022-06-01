@@ -1,2 +1,1 @@
-Run npm install before start coding.
-Run npm run dev to diplay application on browser.
+The project is made in Vue.js. It uses a mapbox library and an API with coordinates of bike rental stations in Oslo.
